@@ -1,0 +1,93 @@
+
+notes-a90-run-samples
+
+toc
+    directory content and cnn_medium/
+    directory src/
+
+
+directory content and cnn_medium/
+
+    $ ls -rt --full-time
+    -rw-rw-r--+    387 2021-08-01 09:11:41.250333000 -0700 notes-a3-tf-format
+    -rw-rw-r--+    278 2021-08-01 12:31:40.794917000 -0700 notes-a2-face-det-links
+    -rw-rw-r--+    319 2021-08-01 12:59:59.237530100 -0700 notes-a1-purepy-links
+    drwxrwxr-x+      0 2021-08-07 14:31:58.911094600 -0700 rknpu
+    drwxrwxr-x+      0 2021-08-07 15:15:06.915881400 -0700 rknn-toolkit
+    -rw-rw-r--+   3972 2021-08-07 19:38:56.563536300 -0700 tmp-build-rknpu-1-mobilenet-ref
+    -rw-rw-r--+    370 2021-08-07 19:46:44.120494300 -0700 tmp-build-rknpu-1-mobilenet
+    drwxrwxr-x+      0 2021-08-08 11:34:13.681664200 -0700 rknn-toolkit-v1.6.1-wheels
+    drwxrwxr-x+      0 2021-08-08 12:14:55.587413900 -0700 rknn-toolkit-v1.6.1-source
+    drwxrwxr-x+      0 2021-08-08 20:06:15.271328300 -0700 cnn_medium-dataset
+    drwxrwxr-x+      0 2021-08-08 21:44:20.668336900 -0700 cnn_medium-dataset-raw
+    drwxrwxr-x+      0 2021-08-08 21:48:43.739741100 -0700 cnn_medium-dataset-raw-split
+    drwxrwxr-x+      0 2021-08-08 22:41:08.348933700 -0700 cnn_medium
+    -rw-rw-r--+    836 2021-08-10 07:12:16.140428200 -0700 notes-a4-tf-tutorials
+    drwxrwxr-x+      0 2021-08-10 07:26:16.439395600 -0700 src
+    -rw-rw-r--+   1041 2022-06-27 09:44:10.483783000 -0700 notes-a90-run-samples
+
+    $ ls --full-time cnn_medium/
+    -rw-rw-r--+      5630 2021-08-08 22:41:08.348933700 -0700 cnn.py
+    drwxrwxr-x+         0 2021-08-08 19:40:09.421038700 -0700 dataset
+    -rw-rw-r--+      3279 2021-08-08 20:08:44.807879000 -0700 readme-pip-packages
+    drwxrwxr-x+         0 2021-08-08 22:39:16.231258800 -0700 saved_model
+    -rwxrwxr-x+   9802184 2021-08-08 20:25:07.529295700 -0700 traied_model.h5
+
+    $ ls cnn_medium/dataset
+    single_prediction  test_set  training_set
+
+    $ ls cnn_medium/dataset/single_prediction/
+    cat_or_dog_1.jpg  cat_or_dog_2.jpg
+
+    $ ls cnn_medium/saved_model/
+    1
+
+    $ ls cnn_medium/saved_model/1/
+    assets  keras_metadata.pb  saved_model.pb  variables
+
+    $ ls -l cnn_medium/saved_model/1/
+    drwxrwxr-x+        0 Aug  8  2021 assets
+    -rwxrwxr-x+    14900 Aug  8  2021 keras_metadata.pb
+    -rwxrwxr-x+   139098 Aug  8  2021 saved_model.pb
+    drwxrwxr-x+        0 Aug  8  2021 variables
+
+    $ ls -l cnn_medium/saved_model/1/assets/
+    total 0
+
+    $ ls -l cnn_medium/saved_model/1/variables/
+    -rwxrwxr-x+   9765190 Aug  8  2021 variables.data-00000-of-00001
+    -rwxrwxr-x+      2303 Aug  8  2021 variables.index
+
+
+directory src/
+
+    $ ls -l src/
+    -rw-rw-r--+        903 Aug 10  2021 show-in-out-1.py
+    -rw-rw-r--+       1368 Aug 10  2021 show-in-out-2.py
+    -rw-rw-r--+   29112121 Aug 10  2021 ssd_mobilenet_v1_coco_2017_11_17.pb
+    -rw-rw-r--+       1122 Aug  7  2021 tf2-tut1-core.py
+
+
+runs
+
+  cnn
+    script:        cnn_medium\cnn.py
+    working dir:   cnn_medium
+
+  see_check_pets1
+    script:        cnn_medium-dataset\see_check_pets1.py
+    working dir:   cnn_medium-dataset
+
+  select_data_set
+    script:        cnn_medium-dataset\select_dataset.py
+    working dir:   cnn_medium-dataset
+
+  show-in-out-1
+    script:        src/show-inout-1.py
+    working dir:   src
+
+  show-in-out-2
+    script:        src/show-in-out-2.py
+    working dir:   src
+
+
