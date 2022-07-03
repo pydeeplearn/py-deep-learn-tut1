@@ -12,3 +12,23 @@ https://www.tensorflow.org/certificate
 
 
 
+search tensorflow model zoo api
+
+
+https://stackoverflow.com/questions/66980312/how-can-i-download-a-pre-trained-model-from-tensorflows-object-detection-model
+  https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087
+  custom object detection from scratch
+
+
+https://stackoverflow.com/questions/66777021/how-to-use-the-models-under-tensorflow-models-research-object-detection-models
+how to use models under tensorflow/models/research
+
+  list of models: 
+        https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+        https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
+
+  api tutorial:
+        read:   https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/
+        source: https://github.com/sglvladi/TensorFlowObjectDetectionTutorial/blob/master/docs/source/index.rst
+
+
