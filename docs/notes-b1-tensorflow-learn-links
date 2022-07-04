@@ -27,8 +27,12 @@ how to use models under tensorflow/models/research
         https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
         https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
 
-  api tutorial:
+  api tutorial for tf 2.5:
         read:   https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/
         source: https://github.com/sglvladi/TensorFlowObjectDetectionTutorial/blob/master/docs/source/index.rst
+
+  api tutorial for tf 1.14:
+        read:   https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/tensorflow-1.14/
+        source: https://github.com/sglvladi/TensorFlowObjectDetectionTutorial/blob/tensorflow-1.14/docs/source/index.rst
 
 
